@@ -130,6 +130,7 @@ export default function Home() {
             <div className="w-full">
               <ChatBar
                 size="large"
+                stacked
                 value={intent}
                 onChange={setIntent}
                 onSubmit={onGenerate}
