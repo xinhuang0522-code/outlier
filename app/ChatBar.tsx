@@ -43,8 +43,8 @@ export function ChatBar({
       className={`float-btn font-bold disabled:opacity-60 ${
         compact
           ? 'flex h-12 w-12 shrink-0 items-center justify-center p-0'
-          : large
-            ? `py-4 text-lg ${stacked ? 'w-full' : 'px-8'}`
+          : large && !stacked
+            ? 'px-8 py-4 text-lg'
             : 'px-6 py-3'
       }`}
     >
