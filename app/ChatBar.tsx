@@ -45,7 +45,9 @@ export function ChatBar({
           ? 'flex h-12 w-12 shrink-0 items-center justify-center p-0'
           : large && !stacked
             ? 'px-8 py-4 text-lg'
-            : 'px-6 py-3'
+            : stacked
+              ? 'px-12 py-3'
+              : 'px-6 py-3'
       }`}
     >
       {compact ? (
