@@ -46,7 +46,7 @@ export function ChatBar({
           : large && !stacked
             ? 'px-8 py-4 text-lg'
             : stacked
-              ? 'px-12 py-3'
+              ? 'w-full py-3'
               : 'px-6 py-3'
       }`}
     >
